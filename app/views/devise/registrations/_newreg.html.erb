@@ -1,0 +1,14 @@
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+
+<div class="inputbox">
+	<div class="field">Email</div>
+	<%= f.email_field :email, :autofocus => true, :placeholder => "Email", :class => 'inputfield' %>
+	<div class="field">Password</div>
+	<%= f.password_field :password, :placeholder => "Password", :class => 'inputfield' %>
+	<div class="field">Confirm Password</div>
+	<%= f.password_field :password_confirmation, :placeholder => "Confirm Password", :class => 'inputfield', :style => 'margin-bottom:20px' %>
+
+	<%= f.submit "Sign-In!", :class => "button-link", :style => 'font-size:1.1em' %>
+</div>
+
+<% end %>

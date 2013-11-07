@@ -1,0 +1,24 @@
+<section id="regular_header">
+	<div class="header">
+
+		<div class="headerstandard">
+			<%= link_to image_tag("FullLogo.png", size:"400x55"), root_path %>
+		</div>
+		<div class="headerright">
+			<%= yield :main_navigation %>
+		</div>
+
+	</div>
+</section>
+<section id="mobile_header">
+	<div class="header">
+		<div class="headermobile">
+			<%= link_to image_tag("FullLogo.png", size:"700x100"), root_path %>
+		</div>
+
+		<div class="headerright">
+			<%= yield :main_navigation %>
+		</div>
+
+	</div>
+</section>

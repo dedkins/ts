@@ -1,7 +1,13 @@
 Ts::Application.routes.draw do
-  get "pages/home"
+  devise_for :members
 
-  root to: "pages#home"
+  scope '/admin' do
+    resources :members
+  end
+
+  get "pages/landing"
+
+  root to: "pages#landing"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
