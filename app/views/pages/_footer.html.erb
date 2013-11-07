@@ -3,6 +3,10 @@
 		Being Created by: <%= link_to 'The Edkins Group', 'http://www.edkinsgroup.com' %>
 	</div>
 	<div style="float:left">
-		<%= link_to 'Log Into Test', new_member_session_path %>
+		<% unless member_signed_in? %>
+			<%= link_to 'Log Into Test', new_member_session_path %>
+		<% else %>
+			<%= link_to "Sign Out", destroy_member_session_path, :method => :delete %>
+		<% end %>
 	</div>
 </div>

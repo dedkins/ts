@@ -2,64 +2,66 @@
 	section#mobile_header {
 		display: none;
 	}
+	section#iphone_header {
+		display: none;
+	}
 	.mobile_sidebar {
 		display: none;
 	}
-	.headermobile {
-		display: none;
-	}
+	
 }
 
 @media screen and (max-width: 968px){
 	#error_explanation {
-		margin-top:150px;
+		clear:both;
 	}
 	#notice {
-		margin-top:150px;
+		clear:both;
 	}
 	.topstatement {
-		margin-top:150px;
+		clear:both;
 	}
 	section#regular_header {
+		display: none;
+	}
+	section#iphone_header {
 		display: none;
 	}
 	nav#main_nav {
 		li {
 	    a, a:link, a:visited {
 	      color: gray;
-	      font-size: 3em;
+	      font-size: 2em;
 	      text-decoration: none;  
     		}
     	}
 	}
 	.yield {
-		width: 100%;
-		min-width:760px;
+		width: 99%;
+		padding-right:20px;
+		min-width:800px;
 	}
 	.header {
-		width: 100%;
-		min-width:760px;
-	}
-	.headerstandard {
-		display: none;
+		width: 98%;
+		min-width:800px;
 	}
 	nav#utility {
 		display: none;
 	}
-	.leftpage {
-		width:100%;
-	}
-	.sidebar {
-		display:none;
+	.goalform {
+	  float:left;  
+	  margin:10px;
+	  width:47%;
 	}
 	.topbanner {
-		width:100%;
+		width:97%;
 	}
 	.sectionsquare {
 		width:100%;
 	}
 	.container {
-		width:100%;
+		width:99%;
+		margin-top:140px;
 	}
 	.box {
 		width:48%;
@@ -69,7 +71,86 @@
 	  height: 300px;
 	}
 	body {
-		font-size:1.5em;
+		font-size:1.2em;
 	}
+}
 
+@media screen and (max-width: 558px){
+	.button-link {
+		line-height:3em;
+		padding:10px 45px;
+	}
+	#error_explanation {
+		margin-top:150px;
+	}
+	#notice {
+		margin-top:150px;
+	}
+	.topstatement {
+		position:relative;
+	}
+	section#regular_header {
+		display: none;
+	}
+	section#mobile_header {
+		display:none;
+	}
+	section#iphone_header {
+		display:inline;
+	}
+	.headerright {
+		float:left;
+		margin-left:-20px;
+	}
+	nav#main_nav {	
+		li {
+	    a, a:link, a:visited {
+	      color: gray;
+	      font-size: 1.2em;
+	      text-decoration: none;  
+    		}
+    	}
+	}
+	.yield {
+		width: 97%;
+		padding-right:20px;
+		min-width:460px;
+	}
+	.header {
+		width: 97%;
+	}
+	nav#utility {
+		display: none;
+	}
+	.goalform {
+	  float:left;  
+	  width:95%;
+	}
+	.topbanner {
+		width:97%;
+	}
+	.sectionsquare {
+		width:100%;
+	}
+	.container {
+		width:98%;
+	}
+	.box {
+		width:97%;
+		height:380px;
+		font-size:1.8em
+	}
+	.flip-container, .front, .back {
+	  height: 370px;
+	}
+	body {
+		font-size:1em;
+	}
+	.footer {
+		width:97%;
+		font-size:.9em
+	}
+	.inputbox {
+		width:100%;
+	}
 }

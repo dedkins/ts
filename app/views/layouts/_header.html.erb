@@ -13,7 +13,7 @@
 <section id="mobile_header">
 	<div class="header">
 		<div class="headermobile">
-			<%= link_to image_tag("FullLogo.png", size:"700x100"), root_path %>
+			<%= link_to image_tag("FullLogo.png", size:"500x70"), root_path %>
 		</div>
 
 		<div class="headerright">
@@ -21,4 +21,14 @@
 		</div>
 
 	</div>
+</section>
+
+<section id="iphone_header">
+		<div class="headeriphone">
+			<%= link_to image_tag("FullLogo.png", size:"450x50"), root_path %>
+		</div>
+
+		<div class="headerright">
+			<%= yield :main_navigation %>
+		</div>
 </section>

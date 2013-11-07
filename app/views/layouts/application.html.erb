@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ts</title>
+  <title>TrackingSpace!</title>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300">
 
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -23,7 +23,7 @@
       });
     });
   </script>
-  
+
 </head>
 <body>
 
@@ -32,8 +32,11 @@
     <%= render 'layouts/header' %>
   </div>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <% if notice %>
+  	<p class="notice"><%= notice %></p>
+  <% elsif alert %>
+  	<p class="alert"><%= alert %></p>
+  <% end %>
 
   <div class="yield">
   	

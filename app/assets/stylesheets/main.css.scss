@@ -15,7 +15,6 @@
 }
 .headermobile {
   width:800px;
-  height:150px;
 }
 
 .headerright {
@@ -97,7 +96,7 @@ nav#main_nav {
 }
 
 .inputbox {
-  width:90%;
+  width:60%;
   background:#e9e9e9;
   padding:20px;
   margin:auto;
@@ -106,8 +105,8 @@ nav#main_nav {
 }
 
 .inputfield {
-  line-height:.8em;
-  font-size:.6em;
+  line-height:1.1em;
+  font-size:.8em;
   padding:5px;
   border-radius:5px;
   width:90%;
@@ -323,9 +322,19 @@ div {
   }
 }
 
-#notice {
+.notice {
   background: green;
   color:white;
+  border-radius:5px;
+  border:1px solid gray;
+  padding:10px;
+  margin:10px 0;
+}
+
+.alert {
+  background: red;
+  color:white;
+  font-weight:bold;
   border-radius:5px;
   border:1px solid gray;
   padding:10px;
@@ -342,14 +351,18 @@ div {
 }
 
 .field_with_errors {
-  padding: 2px;
+  padding: 5px;
   background-color: red;
   display: table;
+  line-height:.8em;
+  font-size:1em;
+  border-radius:5px;
+  width:90%;
 }
 
 #error_explanation {
   width: 98%;
-  border: 2px solid red;
+  border: 2px solid gray;
   border-radius:5px;
   padding: 7px;
   padding-bottom: 0;
@@ -359,15 +372,16 @@ div {
     text-align: left;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
-    font-size: 12px;
+    font-size: 1em;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
+    background-color: red;
     color: #fff;
   }
   ul li {
-    font-size: 12px;
+    font-size: 1em;
     list-style: square;
+    color:black;
   }
 }
 
