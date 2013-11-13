@@ -77,14 +77,17 @@
 	  height: 300px;
 	}
 	body {
-		font-size:1.2em;
+		font-size:1em;
+	}
+	.footer {
+		font-size:.9em;
 	}
 }
 
 @media screen and (max-width: 558px){
 	.button-link {
-		line-height:3em;
-		padding:10px 45px;
+		line-height:1.5em;
+		padding:5px 15px;
 	}
 	#error_explanation {
 		margin-top:150px;
